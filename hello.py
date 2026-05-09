@@ -21,3 +21,7 @@ def whisper(text: str) -> str:
 
 def reverse(text: str) -> str:
     return text[::-1]
+
+
+def repeat(text: str, times: int) -> str:
+    return text * times

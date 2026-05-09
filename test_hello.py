@@ -1,4 +1,4 @@
-from hello import goodbye, greet, reverse, shout, tell_age, whisper
+from hello import goodbye, greet, repeat, reverse, shout, tell_age, whisper
 
 
 def test_greet_default_name() -> None:
@@ -59,3 +59,19 @@ def test_reverse_mixed_case_text() -> None:
 
 def test_reverse_empty_text() -> None:
     assert reverse("") == ""
+
+
+def test_repeat_multiple_times() -> None:
+    assert repeat("ha", 3) == "hahaha"
+
+
+def test_repeat_once() -> None:
+    assert repeat("hi", 1) == "hi"
+
+
+def test_repeat_zero_times() -> None:
+    assert repeat("x", 0) == ""
+
+
+def test_repeat_empty_text() -> None:
+    assert repeat("", 5) == ""
