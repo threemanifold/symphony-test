@@ -1,4 +1,4 @@
-from hello import goodbye, greet, shout, tell_age, whisper
+from hello import goodbye, greet, reverse, shout, tell_age, whisper
 
 
 def test_greet_default_name() -> None:
@@ -47,3 +47,15 @@ def test_whisper_mixed_case_text() -> None:
 
 def test_whisper_empty_text() -> None:
     assert whisper("") == "..."
+
+
+def test_reverse_lowercase_text() -> None:
+    assert reverse("hello") == "olleh"
+
+
+def test_reverse_mixed_case_text() -> None:
+    assert reverse("Symphony") == "ynohpmyS"
+
+
+def test_reverse_empty_text() -> None:
+    assert reverse("") == ""
