@@ -9,3 +9,7 @@ def tell_age(name: str, age: int) -> str:
 
 def goodbye(name: str = "World") -> str:
     return f"Goodbye, {name}!"
+
+
+def shout(text: str) -> str:
+    return f"{text.upper()}!"
