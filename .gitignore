@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Codex / agent transient files
+.codex/tmp/
+
+# OS / editor
+.DS_Store
