@@ -25,3 +25,7 @@ def reverse(text: str) -> str:
 
 def repeat(text: str, times: int) -> str:
     return text * times
+
+
+def count_letters(name: str) -> str:
+    return f"{name} has {len(name)} letters."

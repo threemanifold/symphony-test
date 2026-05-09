@@ -1,4 +1,4 @@
-from hello import goodbye, greet, repeat, reverse, shout, tell_age, whisper
+from hello import count_letters, goodbye, greet, repeat, reverse, shout, tell_age, whisper
 
 
 def test_greet_default_name() -> None:
@@ -75,3 +75,15 @@ def test_repeat_zero_times() -> None:
 
 def test_repeat_empty_text() -> None:
     assert repeat("", 5) == ""
+
+
+def test_count_letters_short_text() -> None:
+    assert count_letters("hi") == "hi has 2 letters."
+
+
+def test_count_letters_name() -> None:
+    assert count_letters("Symphony") == "Symphony has 8 letters."
+
+
+def test_count_letters_empty_text() -> None:
+    assert count_letters("") == " has 0 letters."
