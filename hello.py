@@ -17,3 +17,7 @@ def shout(text: str) -> str:
 
 def whisper(text: str) -> str:
     return f"{text.lower()}..."
+
+
+def reverse(text: str) -> str:
+    return text[::-1]
